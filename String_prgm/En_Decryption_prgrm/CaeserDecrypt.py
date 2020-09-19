@@ -257,18 +257,6 @@ class CiphertextMessage(Message):
         decryttext = Message.apply_shift(self, indexi)
 
         return( ((26 - indexi) , decryttext))
-
-
-        
-
-
-
-
-
-code = input('Enter the text u want to encrypt:')
-shit = int(input('enter the shift:'))
-plaintext = PlaintextMessage(code, shit)
-print('encrypted mesaage:', plaintext.get_message_text_encrypted())
     
 
 code = input('Enter the text u want to decrypt:')
